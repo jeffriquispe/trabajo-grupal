@@ -1,0 +1,98 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Alinear verticalmente dentro de la barra */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav form {
+    display: flex;
+    align-items: center; /* Alinear verticalmente en el formulario */
+    margin-left: auto; /* Empujar el formulario hacia la derecha */
+}
+
+nav form input[type="text"] {
+    padding: 6px;
+    margin-right: 5px;
+}
+
+nav form input[type="submit"] {
+    background-image: url('lupa.png'); /* Imagen de la lupa como fondo */
+    background-size: 20px; /* Tamaño de la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Centrar la imagen */
+    border: none; /* Sin borde */
+    padding: 6px 10px; /* Padding */
+    cursor: pointer; /* Cursor apuntador */
+    transition: background-color 0.3s ease; /* Transición del color de fondo */
+}
+
+nav form input[type="submit"]:hover {
+    background-color: transparent; /* Sin color de fondo al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los productos se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Espacio uniforme entre los productos */
+}
+
+.producto {
+    width: calc(50% - 20px); /* Ancho para dos columnas con espacio entre ellos */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+    background-color: #fff; /* Fondo blanco para resaltar los productos */
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center; /* Centrar texto */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio adicional debajo de la imagen */
+}
